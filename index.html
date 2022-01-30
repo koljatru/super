@@ -100,7 +100,7 @@
           всего за 9 дней</h1>
         <p class="learn__text">Обучающий курс по SUPER JUMP от Владимира Кирюшина</p>
         <div class="learn__block">
-          <button class="learn__btn"><span>Получить</span> Спецпредложение</button>
+          <button class="learn__btn" data-modal-button="modal-1"><span>Получить</span> Спецпредложение</button>
           <div class="learn__desc">
             <img class="learn__desc-img" src="images/gift.png" alt="">
             <h3 class="learn__desc-title">Подарок</h3>
@@ -136,7 +136,7 @@
               </div>
               <p class="what__text-bottom">результатов в процессе движения к твоей
                 и только твоей Сверхцели!</p>
-              <button class="what__btn">Записаться на бесплатный урок</button>
+              <button class="what__btn" data-modal-button="modal-1">Записаться на бесплатный урок</button>
               <div class="what__icon"></div>
             </div>
             <div class="statistics">
@@ -179,7 +179,7 @@
             </div>
             <div class="exactly">
               <h3 class="exactly__title">Тогда <span>SUPER JUMP</span> именно для вас!</h3>
-              <div class="exactly__btn">Получить полный курс программы</div>
+              <button class="exactly__btn" data-modal-button="modal-1">Получить полный курс программы</button>
             </div>
             <div class="system">
               <h3 class="system__title">Чем вам поможет система
@@ -311,7 +311,7 @@
                     доступна в любое время</p>
                 </div>
               </div>
-              <button class="cost__btn">Получить полный курс программы
+              <button class="cost__btn" data-modal-button="modal-1">Получить полный курс программы
                 и зафиксировать за собой скидку</button>
             </div>
           </div>
@@ -320,6 +320,39 @@
         <div class="lesson__dollar-right"></div>
       </section>
     </main>
+  </div>
+  <div class="overlay hidden" data-modal id="modal-1">
+    <div class="modal modal__window">
+      <div class="modal__close" data-modal-close>
+        <img class="modal__close-img" src="images/close.png" alt="">
+      </div>
+      <form class="modal__form" action="#">
+        <label class="modal__form-label">
+          Ваше имя
+          <span>*</span>
+        </label>
+        <input class="modal__form-input" type="text" placeholder="Ваше имя">
+        <label class="modal__form-label">
+          Номер телефона
+          <span>*</span>
+        </label>
+        <input class="modal__form-input" type="tel:" placeholder="+7 (_ _ _) _ _ _ - _ _ - _ _">
+        <label class="modal__form-label">
+          Ваш E-mail
+        </label>
+        <input class="modal__form-input" type="email" placeholder="Ваш E-mail">
+        <div class="modal__form-menu">
+          <select class="request__sale-select modal__form-select">
+            <option value="1">Программа:</option>
+            <option value="2">Super-jump</option>
+            <option value="3">Астрология</option>
+            <option value="4">Психология</option>
+            <option value="4">Кросс-функциональность</option>
+          </select>
+        </div>
+        <button class="modal__form-btn">Отправить</button>
+      </form>
+    </div>
   </div>
   <footer class="footer">
     <div class="container">
